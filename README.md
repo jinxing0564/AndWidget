@@ -1,1 +1,2 @@
 # AndWidget
+Android widgets demo
