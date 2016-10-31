@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.vince.andwidget.scratch.ScratchTestActivity;
 import com.vince.andwidget.video.VideoTestActivity;
 
 public class MainActivity extends Activity implements View.OnClickListener {
@@ -38,6 +39,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 toActivity(VideoTestActivity.class);
                 break;
             case R.id.btn_scratch:
+                toActivity(ScratchTestActivity.class);
                 break;
         }
     }
