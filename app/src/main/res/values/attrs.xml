@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ScratchView">
+        <attr name="mask_color" format="color|reference"></attr>
+        <attr name="water_mark" format="reference"></attr>
+        <attr name="water_mark_width" format="reference|dimension"></attr>
+        <attr name="water_mark_height" format="reference|dimension"></attr>
+        <attr name="finish_percent" format="integer"></attr>
+    </declare-styleable>
+</resources>
