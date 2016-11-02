@@ -20,6 +20,7 @@ import android.view.View;
 import android.view.ViewConfiguration;
 
 import com.vince.andwidget.R;
+import com.vince.andwidget.jni.AndJNI;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -197,11 +198,9 @@ public class ScratchMaskView extends View {
                 maskBitmap.getPixels(pixels, 0, width, 0, 0, width, height);
                 int allPexels = width * height;
                 int emptyPexels = 0;
-                for (int i = 0; i < allPexels; i++) {
-                    if (pixels[i] == 0) {
-                        emptyPexels++;
-                    }
-                }
+                //使用JNI来提高循环效率
+                AndJNI jni = new AndJNI();
+                emptyPexels = jni.andloop(pixels);
                 if (emptyPexels >= (percent / 100f) * allPexels) {
                     return true;
                 }
@@ -263,11 +262,11 @@ public class ScratchMaskView extends View {
             maskBitmap.getPixels(pixels, 0, width, 0, 0, width, height);
             int allPixels = width * height;
             int emptyPixels = 0;
-            for (int i = 0; i < allPixels; i++) {
-                if (pixels[i] == 0) {
-                    emptyPixels++;
-                }
-            }
+
+            //使用JNI来提高循环效率
+            AndJNI jni = new AndJNI();
+            emptyPixels = jni.andloop(pixels);
+
             if (emptyPixels >= (finishPercent / 100f) * allPixels) {
                 handler.sendEmptyMessage(ON_SCRATCH_FINISH);
             }
