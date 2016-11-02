@@ -11,12 +11,12 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginTop="30dp"
-        custom:finish_percent="50"
+        custom:finish_percent="60"
         custom:mask_color="@color/color_mask"
+        custom:scratch_width="40dp"
         custom:water_mark="@drawable/alipay"
         custom:water_mark_height="20dp"
         custom:water_mark_width="20dp">
-
     </com.vince.andwidget.scratch.ScratchView>
 
 </LinearLayout>

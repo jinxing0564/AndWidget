@@ -123,6 +123,10 @@ public class ScratchMaskView extends View {
         }
     }
 
+    public void setScratchWidth(int width) {
+        erasePaint.setStrokeWidth(width);
+    }
+
     public void setFinishPercent(int percent) {
         this.finishPercent = percent;
     }

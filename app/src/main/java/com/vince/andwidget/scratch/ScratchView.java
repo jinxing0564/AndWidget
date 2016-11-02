@@ -58,6 +58,7 @@ public class ScratchView extends FrameLayout {
         float height = typedArray.getDimension(R.styleable.ScratchView_water_mark_height, -1f);
         int percent = typedArray.getInt(R.styleable.ScratchView_finish_percent, 50);
         int markRes = typedArray.getResourceId(R.styleable.ScratchView_water_mark, -1);
+        float scratchWidth = typedArray.getDimension(R.styleable.ScratchView_scratch_width, -1f);
         setMaskColor(color);
         if (markRes >= 0) {
             if (width > 0 && height > 0) {
@@ -67,11 +68,18 @@ public class ScratchView extends FrameLayout {
             }
         }
         setFinishPercent(percent);
+        if (scratchWidth > 0) {
+            setScratchWidth((int) scratchWidth);
+        }
         typedArray.recycle();
     }
 
     public FrameLayout getScratchEntryLayout() {
         return flytEntry;
+    }
+
+    public void setScratchWidth(int width) {
+        scratchMaskView.setScratchWidth(width);
     }
 
     public void setWaterMark(Bitmap bitmap) {
