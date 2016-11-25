@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.vince.andwidget.shape.CircleImageView
+        android:id="@+id/cimage"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:background="@color/color_mask"
+        android:src="@drawable/image_test"/>
+
+</LinearLayout>

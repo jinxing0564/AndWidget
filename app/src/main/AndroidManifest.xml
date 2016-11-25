@@ -24,6 +24,10 @@
         <activity android:name=".scratch.ScratchTestActivity"
                   android:screenOrientation="portrait">
         </activity>
+        <activity android:name=".shape.ShapeImageTestActivity"
+                  android:screenOrientation="portrait">
+
+        </activity>
     </application>
 
 </manifest>
