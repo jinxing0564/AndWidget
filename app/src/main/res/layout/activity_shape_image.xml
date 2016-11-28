@@ -10,9 +10,19 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_margin="40dp"
-        android:paddingTop="20dp"
-        android:paddingRight="20dp"
         android:background="@color/color_mask"
-        android:src="@drawable/image_test"/>
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:src="@drawable/mask_bg"/>
+
+    <com.vince.andwidget.shape.RoundImageView
+        android:id="@+id/rimage"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp"
+        android:background="@color/color_mask"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:src="@drawable/mask_bg"/>
 
 </LinearLayout>

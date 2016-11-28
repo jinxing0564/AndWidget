@@ -15,7 +15,7 @@ public class ShapeImageTestActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shape_image);
-        CircleImageView imageVIew = (CircleImageView) findViewById(R.id.cimage);
+//        CircleImageView imageVIew = (CircleImageView) findViewById(R.id.cimage);
 //        imageVIew.setBackgroundColor(Color.RED);
 //        imageVIew.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.mask_bg));
 //        imageVIew.setImageResource(R.drawable.image_test);
