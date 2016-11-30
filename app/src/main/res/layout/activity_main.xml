@@ -35,6 +35,12 @@
                 android:layout_height="wrap_content"
                 android:text="各种样式的ImageView"/>
 
+            <Button
+                android:id="@+id/btn_large_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="超大图片展示"/>
+
 
         </LinearLayout>
 

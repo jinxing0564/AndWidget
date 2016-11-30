@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.vince.andwidget.largeimage.LargeImageTestActivity;
 import com.vince.andwidget.scratch.ScratchTestActivity;
 import com.vince.andwidget.shape.ShapeImageTestActivity;
 import com.vince.andwidget.video.VideoTestActivity;
@@ -15,11 +16,13 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private Button btnVideo;
     private Button btnScratch;
     private Button btnShape;
+    private Button btnLarge;
 
     private void assignViews() {
         btnVideo = (Button) findViewById(R.id.btn_video);
         btnScratch = (Button) findViewById(R.id.btn_scratch);
         btnShape = (Button) findViewById(R.id.btn_shape);
+        btnLarge = (Button) findViewById(R.id.btn_large_image);
     }
 
     @Override
@@ -34,6 +37,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         btnVideo.setOnClickListener(this);
         btnScratch.setOnClickListener(this);
         btnShape.setOnClickListener(this);
+        btnLarge.setOnClickListener(this);
     }
 
     @Override
@@ -46,7 +50,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 toActivity(ScratchTestActivity.class);
                 break;
             case R.id.btn_shape:
-                toActivity(ShapeImageTestActivity .class);
+                toActivity(ShapeImageTestActivity.class);
+                break;
+            case R.id.btn_large_image:
+                toActivity(LargeImageTestActivity.class);
                 break;
         }
     }

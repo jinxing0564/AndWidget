@@ -26,7 +26,9 @@
         </activity>
         <activity android:name=".shape.ShapeImageTestActivity"
                   android:screenOrientation="portrait">
-
+        </activity>
+        <activity android:name=".largeimage.LargeImageTestActivity"
+                  android:screenOrientation="portrait">
         </activity>
     </application>
 
